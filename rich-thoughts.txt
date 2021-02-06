@@ -1,0 +1,27 @@
+[Yesterday 2:05 PM] Matthews, Richard (GE CoreTech & Cyber)
+    
+build service-worker.js file can use from elsewhere change files make sure they are cached
+build webpack.config.js file will include 2 entry one app and one db
+add service-worker to index.html
+point index.html to dist bundle(s)
+create db.js same dir as index.js to use indexdb to save offline tran
+
+
+
+My implementation:
+Transactions saved offline:
+- Literally just copy db.js from 17-NoSQL/01-Activities/26-Stu-Mini-Project/Unsolved/Public to /Public
+  - index.js already has the reference to saveRecord in the newly copied db.js file.  Just worked for me after that.
+
+PWA it...
+- mainfest.webmanifest
+    - Create public/mainfest.webmanifest with two icon files (use 18-PWA/01-Activities/13-Stu_Caching_Fetching_files/Unsolved/public/mainfest.webmanifest as example)
+    - Reference mainfest in index.html (see similar index.html example in 13-Stu_Caching_Fetching_files folder)
+- service-worker
+    - Create public/service-worker with contents of public directory (used 18-PWA/01-Activities/14-Stu_Notetaker_PWA/Unsolved/public/service-worker.js as example)
+    - Add all files in /public (except service-worker.js) to FILES_TO_CACHE list (in public, I just did a `find . -type f` to genrate the list)
+    - modify addEventListener "fetch" to include /api/transaction
+    - Add <script>  if ("serviceWorker" ... </script> code to index.html
+- webpack
+
+
