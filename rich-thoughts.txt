@@ -27,6 +27,6 @@ PWA it...
 Heroku and MongoDB:
 - Added to heroku `heroku create`
 - Create a new Project and a new Cluster within the project (cluster was still Cluster0 like before)
-  - With this, I could create a new user
+  - With this, I could create a new user, make sure to add as Atlas admin
 
 
