@@ -22,6 +22,6 @@ PWA it...
     - Add all files in /public (except service-worker.js) to FILES_TO_CACHE list (in public, I just did a `find . -type f` to genrate the list)
     - modify addEventListener "fetch" to include /api/transaction
     - Add <script>  if ("serviceWorker" ... </script> code to index.html
-- webpack
+- webpack - abandoned
 
 
