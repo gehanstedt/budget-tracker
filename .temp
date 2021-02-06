@@ -1,0 +1,6 @@
+budget-tracker
+showmethemoney
+
+mongodb+srv://budget-tracker:showmethemoney@cluster0.k4ywx.mongodb.net/budget-tracker?retryWrites=true&w=majority
+
+mongodb+srv://budget-tracker:showmethemoney@cluster0.k4ywx.mongodb.net/test

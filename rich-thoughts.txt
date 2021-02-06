@@ -24,4 +24,9 @@ PWA it...
     - Add <script>  if ("serviceWorker" ... </script> code to index.html
 - webpack - abandoned
 
+Heroku and MongoDB:
+- Added to heroku `heroku create`
+- Create a new Project and a new Cluster within the project (cluster was still Cluster0 like before)
+  - With this, I could create a new user
+
 
