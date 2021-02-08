@@ -11,6 +11,7 @@ create db.js same dir as index.js to use indexdb to save offline tran
 My implementation:
 Transactions saved offline:
 - Literally just copy db.js from 17-NoSQL/01-Activities/26-Stu-Mini-Project/Unsolved/Public to /Public
+  - Add db.js script to index.html 
   - index.js already has the reference to saveRecord in the newly copied db.js file.  Just worked for me after that.
 
 PWA it...
